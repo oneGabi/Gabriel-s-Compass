@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Routine - Gabriel's Escape Plan</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Routine - Gabriel's Escape Plan</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="conmtainer">
-        <h1>🕓 Gabriel's Daily Routine</h1>
-        <ul class="routine-list">
-            <li><strong>04:30</strong> - Wake up, water, quick shower, 5 minutes silence</li>
-            <li><strong>05:00</strong> - Programmingg Study (1 lesson, take 3 notes)</li>
-            <li><strong>Work</strong> - Minimum effort, survival mode</li>
-            <li><strong>Evening</strong> - Creative Business School or Migration Research</li>
-            <Li><strong>10-min Workout</strong> - Pushups, planks, jumping jacks</Li>
-            <li><strong>Before bed</strong> - Update <code>compass.html</code> with today's note</li>
-            <li><strong>22:00</strong> - Sleep</li>
-        </ul>
-    </div>
+  <div class="container">
+    <h1>🕓 Gabriel's Daily Routine</h1>
     <a href="compass.html" class="button">Back to Compass</a>
+    <ul class="routine-list">
+      <li><strong>04:30</strong> - Wake up, water, quick shower, 5 minutes silence</li>
+      <li><strong>05:00</strong> - Programming Study (1 lesson, take 3 notes)</li>
+      <li><strong>Work</strong> - Minimum effort, survival mode</li>
+      <li><strong>Evening</strong> - Creative Business School or Migration Research</li>
+      <li><strong>10-min Workout</strong> - Pushups, planks, jumping jacks</li>
+      <li><strong>Before bed</strong> - Update <code>compass.html</code> with today's note</li>
+      <li><strong>22:00</strong> - Sleep</li>
+    </ul>
+  </div>
 
-    <h2>How to update the depository by VS terminal</h2>
-    <p>git add .</p>
-    <p>git commit -m "My comentary"</p>
-    <p>git push</p>
+  <div class="routine-container">
+    <input type="text" id="taskInput" placeholder="Add a new task..." />
+    <button onclick="addTask()">Add Task</button>
+    <ul id="taskList"></ul>
+  </div>
+
+  <div class="container">
+    <h4>How to update the repository by VS terminal</h4>
+    <p><code>git add .</code></p>
+    <p><code>git commit -m "My commentary"</code></p>
+    <p><code>git push</code></p>
+  </div>
+
+  <script src="routine.js"></script>
 </body>
 </html>
